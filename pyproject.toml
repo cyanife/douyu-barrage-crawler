@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "douyu-barrage-crawler"
+version = "0.1.0"
+description = ""
+authors = ["cyanife <cyanife@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asyncpg = "^0.21.0"
+uvloop = "^0.14.0"
+websockets = "^8.1"
+psycopg2 = "^2.8.6"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

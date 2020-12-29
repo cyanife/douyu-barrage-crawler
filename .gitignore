@@ -1,0 +1,31 @@
+# IDE Fragments
+/.vscode
+*__pycache__*
+*.idea*
+
+# Environment Files
+/.env
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+config/settings.local.py
+.tool-versions
