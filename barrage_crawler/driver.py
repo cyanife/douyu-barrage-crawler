@@ -1,6 +1,6 @@
 import asyncpg
 import logging
-from json import dumps, loads
+import rapidjson
 from datetime import datetime, timezone, timedelta
 from typing import List, Tuple, Iterable
 
@@ -22,7 +22,10 @@ class Driver:
 
         async def init(conn):
             await conn.set_type_codec(
-                "jsonb", encoder=dumps, decoder=loads, schema="pg_catalog"
+                "jsonb",
+                encoder=rapidjson.dumps,
+                decoder=rapidjson.loads,
+                schema="pg_catalog",
             )
 
         try:

@@ -18,3 +18,4 @@ services:
     environment:
       - DB_HOST=db
       - DB_PASS=password # change PW here
+    command: sh -c "python /app/crawler.py migrate && python /app/worker.py"

@@ -11,6 +11,7 @@ asyncpg = "^0.21.0"
 uvloop = "^0.14.0"
 websockets = "^8.1"
 psycopg2 = "^2.8.6"
+python-rapidjson = "^1.0"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.6.0"
